@@ -1,15 +1,11 @@
-import PropTypes from "prop-types";
+function Total(props) {
 
-function Total({total}) {
+  console.log(props);
   return (
     <div>
-        <p>Number of exercises {total}</p>
+        <p>Number of exercises {props.parts[0].exercises + props.parts[1].exercises + props.parts[2].exercises}</p>
     </div>
   )
 }
-
-Total.propTypes = {
-  total: PropTypes.number.isRequired,
-};
 
 export default Total;

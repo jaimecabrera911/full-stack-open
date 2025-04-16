@@ -1,15 +1,9 @@
-import PropTypes from "prop-types";
-
-function Header({ course }) {
+function Header(props) {
   return (
     <div>
-        <h1>{course}</h1>
+        <h1>{props.course}</h1>
     </div>
   )
 }
-
-Header.propTypes = {
-  course: PropTypes.string.isRequired,
-};
 
 export default Header
